@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>WORDIX</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+
+  <header>
+    <div class="brand">
+      <h1>WORDIX</h1>
+      <p class="tagline">Tebak kata 5 huruf dalam 6 percobaan</p>
+    </div>
+    <div class="header-controls">
+      <div class="lang-toggle" role="group" aria-label="Pilih bahasa">
+        <button id="btn-id" class="active" type="button">ID</button>
+        <button id="btn-en" type="button">EN</button>
+      </div>
+      <button class="icon-btn" id="btn-help" type="button" aria-label="Cara main">?</button>
+      <button class="icon-btn" id="btn-theme" type="button" aria-label="Ganti tema">◐</button>
+    </div>
+  </header>
+
+  <p class="status-text" id="status-text">Percobaan 1 dari 6</p>
+
+  <div class="board-wrap">
+    <div class="board" id="board"></div>
+  </div>
+
+  <div class="keyboard" id="keyboard"></div>
+
+</div>
+
+<div class="toast" id="toast"></div>
+
+<div class="modal-backdrop" id="modal">
+  <div class="modal">
+    <h2 id="modal-title">Selamat!</h2>
+    <p id="modal-sub">Kamu berhasil menebak kata ini</p>
+    <div class="answer" id="modal-answer">KATA</div>
+    <div class="stats-row">
+      <div class="stat"><b id="stat-played">0</b><span>Main</span></div>
+      <div class="stat"><b id="stat-winrate">0%</b><span>Menang</span></div>
+      <div class="stat"><b id="stat-streak">0</b><span>Beruntun</span></div>
+    </div>
+    <button class="btn-primary" id="btn-again">Main Lagi</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
